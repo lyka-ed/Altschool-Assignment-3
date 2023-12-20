@@ -7,7 +7,7 @@
     <title>WP Pusher Checkout</title>
   </head>
   <body>
-    <div class="wp-pusher">
+    <section class="wp-pusher">
       <!-- Main WP-Pusher BG starts here -->
       <header class="header">
         <div class="logo">
@@ -22,16 +22,16 @@
       </header>
       
       <main class="panel">
-        <div class="container-box">
+        <section class="container-box">
           <!-- left box content starts -->
-          <div class="left-content">
+          <section class="left-content">
             <div class="left-header-text">
               <h1>Checkout</h1>
             </div>
             <form action="post">
               <!-- Your Basic Information begins here -->
               <div class="your-basic-information">
-                <span class="circular-symbol">1 </span>
+                <span class="circular-symbol"><span class="num-1">1</span></span>
                 <span class="basic-information">Your Basic Information</span>
 
                 <div class="form-item">
@@ -57,31 +57,31 @@
 
               <!-- Your Payment Information begins here -->
               <div class="your-payment-information">
-                <span class="circular-symbol">2</span><span class="payment">Your Payment Information</span>
+                <span class="circular-symbol"><span class="num-2">2</span></span><span class="payment">Your Payment Information</span>
 
                 <div class="credit-card">
                   <label for="credit-card">Credit Card</label>
                   <br>
                   <div class="inputs">
-                    <input type="text" placeholder="Card Number" class="first" required>
-                    <input type="text" placeholder="MM / YY" class="second" required>
-                    <input type="text" placeholder="CVC" class="third" required>
+                    <input type="text" inputmode="numeric" placeholder="Card Number" maxlength="19" pattern="[0-9]" class="first" required>
+                    <input type="text" inputmode="numeric" placeholder="MM/YY" maxlength="5"  pattern="(0[1-9]|[0-2])\/\d{2}" class="second" required>
+                    <input type="text" inputmode="numeric" placeholder="CVC"  maxlength="3" class="third" required>
                   </div>
                 </div>
               </div>
 
               <div class="submit">
                 <button type="submit" class="pusher-button">Buy WP Pusher</button>
-                <span class="circular-symbol">?</span>
-                <span class="help-sign"><b>Need any help?</b> Don't hesitate to <u>contact</u></span>
+                <span class="circular-symbol"></span>
+                <span class="help-sign"><span class="question-mark">?</span><b>Need any help?</b> Don't hesitate to <u>contact</u></span>
                 <p>support!</p>
                 <img src="assets/powered_by_stripe.png" alt="powered_by_stripe-logo">
               </div>
             </form>
-          </div>
+          </section>
 
           <!-- Right box content begins here -->
-          <div class="right-content">
+          <section class="right-content">
             <div class="content-box">
               <div class="right=header-text">
                 <h1>Freelancer</h1>
@@ -109,8 +109,8 @@
                 <br>              
               </div>
 
-              <div class="detail-1">
-                <p>Need <b>20</b> client sites?</p>
+              <div class="detail-1"> 
+                <p>Need <b>20</b> client sites? </p>
                   <span><b>Switch to the <i>Agency</i> plan.</b></span>  
               </div>
 
@@ -123,14 +123,14 @@
                 <b><h2>Kirk Beard</h2></b>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+        </section>
       </main>
 
       <footer>
         <p>&#169 2018 WP Pusher IVS  · <a href="#"> Terms of Service</a></p>
       </footer>
 
-    </div>
+    </section>
   </body>
 </html>

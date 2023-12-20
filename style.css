@@ -169,6 +169,14 @@ body {
   justify-content: center;
 }
 
+.num-1 {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top: 1.5px;
+  height: 30px;
+}
+
 .your-basic-information .basic-information {
   position: relative;
   width: 220px;
@@ -281,6 +289,14 @@ input::placeholder {
   border-bottom: 2px solid var(--border-bottom);
 }
 
+.num-2 {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top: 1.5px;
+  height: 30px;
+}
+
 .your-payment-information .payment {
   width: 245px;
   height: 32px;
@@ -321,27 +337,40 @@ input::placeholder {
 .inputs .input {
   flex: 1;
   margin-right: 10px;
+  height: 40px;
   border: none;
   border: var(--placeholder-bg-color);
   background: var(--placeholder-bg-color);
 }
 .inputs .first {
   margin-left: -10px;
+  margin-bottom: -10px;
+  top: -5px;
+  position: relative;
   background: var(--placeholder-bg-color);
   border: var(--placeholder-bg-color);
 }
 
 .inputs .second {
-  width: 68px;
-  margin-left: 150px;
+  position: relative;
+  width: 70px;
+  justify-content: center;
+  margin-left: 120px;
+  margin-bottom: -10px;
+  top: -5px;
   background: var(--placeholder-bg-color);
   border: var(--placeholder-bg-color);
 }
 
 .inputs .third {
+  position: relative;
   width: 50px;
-  margin-left: 25px;
+  margin-left: 30px;
   margin-right: 4px;
+  margin-bottom: -10px;
+  justify-content: center;
+  text-align: center;
+  top: -5px;
   background: var(--placeholder-bg-color);
   border: var(--placeholder-bg-color);
 }
@@ -388,9 +417,21 @@ input::placeholder {
   padding-left: 105px;
 }
 
+.question-mark {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: var(--circular-number-sign-color);
+  left: -24px;
+  top: -2.5px;
+  height: 30px;
+}
+
 b {
   color: var(--navbar-text-color);
   font-family: "Lota-Bold", Helvetica;
+  position: relative;
+  margin-left: -9.1px;
   font-size: 14px;
   font-weight: 700;
 }
@@ -560,16 +601,16 @@ b {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  gap: 12px;
+  gap: 40px;
 }
 
 .detail-1 p {
   position: relative;
   top: -11px;
-  letter-spacing: -0.01px;
   align-self: stretch;
   line-height: 40px;
   font-family: "Lato-Light", Helvetica;
+  letter-spacing: -0.01px;
   font-weight: 700;
   font-size: 16px;
   left: 2px;
@@ -577,6 +618,7 @@ b {
 }
 
 .detail-1 b {
+  margin: 0;
   font-family: "Lato-Bold", Helvetica;
   font-size: 16px;
   font-weight: 700;
@@ -586,6 +628,7 @@ b {
 
 .detail-1 span {
   position: relative;
+  margin: 0;
   top: -10px;
   color: var(--right-content-text-color);
   font-family: "Lato-Regular", Helvetica;
@@ -593,7 +636,6 @@ b {
   font-weight: 700;
   letter-spacing: -0.01px;
   align-self: stretch;
-  position: relative;
   left: 2px;
   border-bottom: 4px solid #b9f5ff;
 }
@@ -602,7 +644,7 @@ b {
   width: 229px;
   height: 196px;
   margin-top: 40px;
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid var(--submit-button-text-color);
 }
 
 .detail-2 p {
@@ -614,12 +656,14 @@ b {
   font-weight: 400;
   letter-spacing: -0.01px;
   top: 40px;
+  margin-left: -4px;
   left: 2px;
   color: var(--right-content-text-color);
   line-height: 24px;
 }
 
 .detail-2 b {
+  margin: 0;
   font-family: "Lato-Bold", Helvetica;
   font-size: 18px;
   font-weight: 700;
